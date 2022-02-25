@@ -1,0 +1,64 @@
+.audio-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px 40px;
+  color: white;
+  height: 95%;
+  overflow: hidden;
+}
+
+.audio-card__cover {
+  border-radius: 50%;
+  padding: 15px;
+  border: 2px dashed yellow;
+}
+
+.audio-card__cover > img {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  object-fit: contain;
+  box-shadow: -2px -2px 10px rgb(172, 172, 172);
+}
+
+.audio-card > h4 {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.song-artist {
+  font-size: 0.95rem;
+  color: rgb(209, 209, 209);
+  margin-top: -20px;
+}
+
+.next-song__info {
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgb(209, 209, 209);
+  height: 40px;
+}
+
+.rotateB {
+  animation: rotateB 20s infinite;
+  animation-timing-function: linear;
+}
+
+.rotateA {
+  animation: rotateA 20s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotateB {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes rotateA {
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}

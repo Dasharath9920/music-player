@@ -1,0 +1,17 @@
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 45%;
+}
+
+.controls > button {
+  background-color: transparent;
+  border: none;
+  color: rgb(220, 220, 220);
+  transition: 0.2s ease all;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
